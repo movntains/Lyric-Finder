@@ -13,17 +13,15 @@ class Tracks extends Component {
     };
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
     const BASE_URL = 'http://api.musixmatch.com/ws/1.1/';
     const API_KEY = `&apikey=${process.env.REACT_APP_MM_KEY}`;
 
     // Get the top 10 most popular tracks in the US
-    axios.get(`${CORS_URL}${BASE_URL}chart.tracks.get?page=1&page_size=10&country=us&f_has_lyrics=1${API_KEY}`)
-      .then(res => {
-        this.setState({ trackList: res.data.message.body.track_list });
-      })
-      .catch(err => console.log(err));
+    const res = await axios.get(`${CORS_URL}${BASE_URL}chart.tracks.get?page=1&page_size=10&country=us&f_has_lyrics=1${API_KEY}`);
+
+    this.setState({ trackList: res.data.message.body.track_list });
   }
 
   render() {
