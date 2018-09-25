@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import Spinner from '../layout/Spinner';
 import Track from './Track';
 
 class Tracks extends Component {
@@ -27,16 +28,20 @@ class Tracks extends Component {
   render() {
     const { trackList, heading } = this.state;
 
-    return (
-      <React.Fragment>
-        <h3 className="text-center mb-4">{heading}</h3>
-        <div className="row">
-          {trackList.map(item => {
-            return <Track key={item.track.track_id} track={item.track} />;
-          })}
-        </div>
-      </React.Fragment>
-    );
+    if (trackList === undefined || trackList.length === 0) {
+      return <Spinner />;
+    } else {
+      return (
+        <React.Fragment>
+          <h3 className="text-center mb-4">{heading}</h3>
+          <div className="row">
+            {trackList.map(item => {
+              return <Track key={item.track.track_id} track={item.track} />;
+            })}
+          </div>
+        </React.Fragment>
+      );
+    }
   }
 }
 
