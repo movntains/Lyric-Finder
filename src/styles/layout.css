@@ -1,0 +1,17 @@
+/* ------------------ */
+/* ----- NAVBAR ----- */
+/* ------------------ */
+
+.navbar {
+  background-color: #141820;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #71b1fe;
+}
+
+.navbar .h1 {
+  font-weight: 300;
+}

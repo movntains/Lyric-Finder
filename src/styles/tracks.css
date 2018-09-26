@@ -1,0 +1,46 @@
+/* ------------------ */
+/* ----- SEARCH ----- */
+/* ------------------ */
+
+input[type="text"] {
+  outline: none;
+  box-shadow: none !important;
+  background-color: #818CA6;
+  border: none !important;
+  font-weight: 300;
+}
+
+input[type="text"]::placeholder {
+  color: #f1f1f1;
+}
+
+input[type="text"]:focus {
+  background-color: #212836;
+  border: 2px solid #E76572 !important;
+  color: #818CA6;
+}
+
+.card {
+  background-color: #e6eeff21;
+  border-radius: 8px;
+}
+
+.display-4 {
+  font-size: 2.5em;
+}
+
+.display-4 i {
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #71b1fe;
+  color: #212836;
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #212836;
+  color: #71b1fe;
+}

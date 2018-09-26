@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import '../styles/layout.css';
+import '../styles/tracks.css';
 import { Provider } from '../context';
 import Navbar from './layout/Navbar';
 import IndexPage from './layout/IndexPage';
