@@ -63,3 +63,43 @@ input[type="text"]:focus {
   background-color: #72817F;
   color: #1F363D;
 }
+
+/* ------------------ */
+/* ----- TRACKS ----- */
+/* ------------------ */
+
+h3 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #CCC7B9;
+  border-bottom: 1px solid #CCC7B9;
+}
+
+/* ----------------- */
+/* ----- TRACK ----- */
+/* ----------------- */
+
+h5 {
+  color: #CCC7B9;
+}
+
+.fa-play,
+.fa-compact-disc {
+  color: #9CB0AE;
+  margin-right: 5px;
+}
+
+.fa-chevron-right {
+  margin-right: 5px;
+}
+
+.btn-lyrics {
+  background-color: #1F363D;
+  color: #717B8E;
+  text-transform: uppercase;
+}
+
+.btn-lyrics:hover {
+  background-color: #1A2D32;
+  color: #717B8E;
+}

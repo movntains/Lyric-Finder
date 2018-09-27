@@ -6,7 +6,7 @@ const Track = props => {
 
   return (
     <div className="col-md-6">
-      <div className="car mb-4 shadow-sm">
+      <div className="card mb-4 shadow-sm">
         <div className="card-body">
           <h5>{track.artist_name}</h5>
           <p className="card-text">
@@ -25,7 +25,7 @@ const Track = props => {
           </p>
           <Link
             to={`lyrics/track/${track.track_id}`}
-            className="btn btn-dark btn-block"
+            className="btn btn-lyrics btn-block"
           >
             <i className="fas fa-chevron-right"></i>{' '}
             View Lyrics

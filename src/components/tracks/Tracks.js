@@ -16,7 +16,7 @@ class Tracks extends Component {
           } else {
             return (
               <React.Fragment>
-                <h3 className="text-center mb-4">{heading}</h3>
+                <h3 className="text-center mb-4 mt-5">{heading}</h3>
                 <div className="row">
                   {trackList.map(item => {
                     return <Track key={item.track.track_id} track={item.track} />;
