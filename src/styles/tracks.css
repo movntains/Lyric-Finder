@@ -45,6 +45,7 @@ input[type="text"]:focus {
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
+  text-transform: uppercase;
 }
 
 .btn:active {
@@ -55,7 +56,6 @@ input[type="text"]:focus {
 .btn-search {
   background-color: #9CB0AE;
   color: #1F363D;
-  text-transform: uppercase;
   border: none;
 }
 
@@ -93,13 +93,37 @@ h5 {
   margin-right: 5px;
 }
 
-.btn-lyrics {
+.btn-lyrics,
+.btn-back {
   background-color: #1F363D;
   color: #717B8E;
-  text-transform: uppercase;
 }
 
-.btn-lyrics:hover {
+.btn-lyrics:hover,
+.btn-back:hover {
   background-color: #1A2D32;
   color: #717B8E;
+}
+
+/* ------------------ */
+/* ----- LYRICS ----- */
+/* ------------------ */
+
+.text-secondary {
+  color: #9CB0AE !important;
+  font-style: italic;
+}
+
+.list-group-item {
+  background-color: #46597D;
+}
+
+.list-group-item:first-of-type {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.list-group-item:last-of-type {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
