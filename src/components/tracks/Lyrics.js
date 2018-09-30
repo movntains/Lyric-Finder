@@ -70,7 +70,11 @@ class Lyrics extends Component {
           <ul className="list-group mt-3 mb-3 shadow-sm">
             <li className="list-group-item">
               <strong>Song Genre</strong>:{' '}
-              {track.primary_genres.music_genre_list[0].music_genre.music_genre_name}
+              {
+                track.primary_genres.music_genre_list.length === 0 ?
+                'A genre is not available for this track.' :
+                track.primary_genres.music_genre_list[0].music_genre.music_genre_name
+                }
             </li>
             <li className="list-group-item">
               <strong>Explicit Words</strong>:{' '}
