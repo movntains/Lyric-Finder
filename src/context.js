@@ -28,7 +28,7 @@ export class Provider extends Component {
   }
 
   async componentDidMount() {
-    const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
+    const CORS_URL = 'https://stark-dusk-62893.herokuapp.com/';
     const BASE_URL = 'http://api.musixmatch.com/ws/1.1/';
     const API_KEY = `&apikey=${process.env.REACT_APP_MM_KEY}`;
 

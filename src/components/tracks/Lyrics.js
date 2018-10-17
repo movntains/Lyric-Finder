@@ -16,7 +16,7 @@ class Lyrics extends Component {
   }
 
   async getLyrics() {
-    const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
+    const CORS_URL = 'https://stark-dusk-62893.herokuapp.com/';
     const BASE_URL = 'http://api.musixmatch.com/ws/1.1/';
     const API_KEY = `&apikey=${process.env.REACT_APP_MM_KEY}`;
 
@@ -27,7 +27,7 @@ class Lyrics extends Component {
   }
 
   async getTrackName() {
-    const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
+    const CORS_URL = 'https://stark-dusk-62893.herokuapp.com/';
     const BASE_URL = 'http://api.musixmatch.com/ws/1.1/';
     const API_KEY = `&apikey=${process.env.REACT_APP_MM_KEY}`;
 
